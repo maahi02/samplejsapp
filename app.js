@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://tst.tryasp.net"; // Replace with your API URL
+const API_BASE_URL = "https://tst.tryasp.net"; // Replace with your API URL
 
 async function login() {
     const username = document.getElementById("username").value;
