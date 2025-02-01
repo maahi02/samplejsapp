@@ -2,7 +2,7 @@ const API_BASE_URL = "https://tst.tryasp.net"; // Replace with your API URL
 
 //const API_BASE_URL = "https://tst.tryasp.net"; // Replace with your API URL
 let accessToken = ''; // Store access token here
-let refreshToken = ''; // Store refresh token here
+//let refreshToken = ''; // Store refresh token here
 
 // Login function to get access and refresh tokens
 async function login() {
@@ -16,7 +16,7 @@ async function login() {
     // params.append("client_id", "your-client-id");  // If needed
     // params.append("client_secret", "your-client-secret"); // If needed
 
-    const response = await fetch(`${API_BASE_URL}/token`, {
+    const response = await fetch(`${API_BASE_URL}/Token`, {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
