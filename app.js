@@ -46,7 +46,7 @@ async function fetchProtectedData() {
     document.getElementById("response").textContent = JSON.stringify(data, null, 2);
 }
 
-async function refreshToken() {
+async function refreshTokenFun() {
     alert('called');
     const response = await fetch(`${API_BASE_URL}/api/Account/refresh-token`, {
         method: "POST",
