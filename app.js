@@ -47,7 +47,8 @@ async function fetchProtectedData() {
 }
 
 async function refreshToken() {
-    const response = await fetch(`${API_BASE_URL}/refresh-token`, {
+    alert('called');
+    const response = await fetch(`${API_BASE_URL}/api/Account/refresh-token`, {
         method: "POST",
         credentials: "include", // Ensures cookies are sent
     });
