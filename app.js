@@ -28,7 +28,7 @@ async function login() {
 
     if (data.access_token) {
         accessToken = data.access_token; // Store the access token
-        refreshToken = data.refresh_token; // Store the refresh token (if available)
+       // refreshToken = data.refresh_token; // Store the refresh token (if available)
         document.getElementById("response").textContent = JSON.stringify(data, null, 2);
     } else {
         document.getElementById("response").textContent = "Login failed!";
